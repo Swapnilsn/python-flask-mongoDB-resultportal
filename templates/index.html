@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>studentresult</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="/static/css/login1.css">
+</head>
+  <style>
+    p  {
+     color: red;  font-family:'Times New Roman', Times, serif;   font-size: 200%;      text-align: center; }
+
+   .grid-container {
+    display: grid; grid-template-columns: auto auto auto auto;  background-color: #2196F3;  padding: 10px; }
+    
+   .grid-container > div {
+     background-color: rgba(255, 255, 255, 0.8); text-align: center;  padding: 10px 0; font-size: 20px; }
+</style>
+
+
+<div style="background-image: url('/static/banner.jpg');
+background-size: cover; height:170px; padding-top:10px;"> </div>
+
+<!-- <p ><a href="/register">ADMIN</a></p> -->
+
+<div id="login-box">
+    <div class="left">
+      <form  action = "/result"   method = "GET">
+      <h1 style="text-align: center;">Result</h1>
+       
+      <input type="text"   name="name"  class="input"  placeholder="Student Name" />
+
+      <input type="text"   name="roll"  class="input2"  placeholder="Roll No" />
+
+      <input type="submit" value="submit" class="sub" />
+    </div>
+  </form>
+    
+  </div>
+</html>
