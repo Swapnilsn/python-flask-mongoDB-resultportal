@@ -1,4 +1,4 @@
-from flask import Flask , render_template ,request, session, abort,flash,message
+from flask import Flask , render_template ,request
 from pymongo import MongoClient
 from werkzeug.utils import secure_filename
 import os
@@ -21,7 +21,7 @@ def do_admin_login():
       return render_template('register.html')
     else:
          message = 'Please login to your account'
-        #  flash('wrong password!')
+        
          return adhome()
 
 
